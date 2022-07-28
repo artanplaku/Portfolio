@@ -1,0 +1,11 @@
+.portfolio__item-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url("https://media-exp1.licdn.com/dms/image/C4E03AQGZKEIX7tNw7Q/profile-displayphoto-shrink_400_400/0/1637545247385?e=1664409600&v=beta&t=VRtbdj6ONhyJT7DfTDvIWkUhymEqziWEXLOjBvBSgsU");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

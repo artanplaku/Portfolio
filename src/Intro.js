@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-
+import ProjectOne from "./ProjectOne";
 import "./Intro.css"
 
 const Intro = () => {
@@ -113,16 +113,50 @@ const Intro = () => {
           </div>
         </div>
       </section>
-      <section className="portfolio__container" id="portfolio">
-        <h1 className="portfolio__title--small">Portfolio</h1>
-        <ul className="portfolio__list--grid">
-          {/* <ProjectOne />
-          <ProjectTwo />
-          <ProjectThree />
-          <ProjectFour />
-          <ProjectFive /> */}
-        </ul>
+      <section>
+        <h1>Portfolio</h1>
+        <div className="project__div">
+          <div className="project__div__inside">
+             <a
+              href="https://open-vault-game.netlify.app/"
+              target="_blank"
+            >
+            <div className="project__one">
+            <p className="open_vault">Open the Vault</p>
+            <div className="space__around"></div>
+            <p className="portfolio__text">
+            Open the vault is a two player game, where one player picks a word and the other has 1 minute to guess it.
+          </p>
+
+            </div>
+            </a>
+           
+            <div className="project__two">
+            CryptoSearch
+             <a
+
+              href="https://github.com/dev-rome/Tenant-Estate"
+              target="_blank"
+            >
+              
+
+            </a>
+            </div>
+            <div className="project__three">
+            Reveal
+             <a
+
+              href="https://github.com/dev-rome/Tenant-Estate"
+              target="_blank"
+            >
+              
+
+            </a>
+            </div>
+          </div>
+        </div>
       </section>
+      
       </div>
   );
 };
