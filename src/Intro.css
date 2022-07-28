@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212529;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+li {
+    float: right;
+    font-size: 23px;
+  }
+  
+li .first {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__title--small {
+    font-size: var(--font-sm);
+    color: var(--pink);
+}
+
+.hero__title--big {
+    font-size: var(--font-xxl);
+}
+
+.typed-cursor, span {
+    color: var(--pink);
+}
+
+.hero__text {
+    max-width: 800px;
+    line-height: 1.5;
+    margin: .3rem 0 1rem;
+}
+
+.hero__btn {
+    display: flex;
+    gap:  var(--gap-xs);
+    
+}
+
+/* .test1{
+    height: 500px;
+}
+.test{
+    height: 500px;
+} */
+
+.hero__btn-social {
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+.hero__btn-social:hover {
+    animation: headShake 1s;
+    background-color: var(--pink);
+}
+
+.hero__btn-icon {
+    margin-right: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .hero__title--big {
+        font-size: var(--font-lg);
+    }
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--gap-lg);
+}
+
+.about__title, .about__tech-title {
+    font-size: var(--font-sm);
+    color: var(--pink);
+    margin-bottom: .5rem;
+}
+
+.about__text {
+    line-height: 1.5;
+    margin-bottom: .9rem;
+}
+
+.about__tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.about__tech-item {
+    font-size: var( --font-xs);
+}
+
+.about__tech-item i {
+    margin-right: .5rem;
+    color: var(--pink);
+}
+
+.about__image {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .about__content {
+        grid-template-columns: 1fr;
+
+    }
+
+    .about__left {
+        order: 2;
+    }
+
+   .about__right {
+       order: 1;
+   }
+}
