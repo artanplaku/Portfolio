@@ -107,8 +107,10 @@ li a:hover:not(.active) {
 }
 
 .about__text {
+    padding-top: 50px;
     line-height: 1.5;
     margin-bottom: .9rem;
+    font-size: 20px;
 }
 
 .about__tech-list {
@@ -244,13 +246,14 @@ margin-bottom: 1.5rem;
     align-items: center;
 }
 .project__div{
-    display: flex;
+    
     flex-direction: row;
     justify-content: space-around;
     
 }
 .project__div__inside{
     display: flex;
+    justify-content: space-around;
     
     
     
@@ -269,4 +272,11 @@ margin-bottom: 1.5rem;
 
   .open_vault{
       padding-top: 10px;
+      font-size: 40px;
+      color: whitesmoke
+  }
+  .portfolio{
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: #fdaa05;
   }
