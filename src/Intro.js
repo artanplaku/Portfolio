@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./Intro.css"
 import Contact from "./Contact";
+import Profile from './profile.jpeg'
 
 const Intro = () => {
   const ref = useRef(null)
@@ -95,7 +96,7 @@ const Intro = () => {
             
           </div>
           <div className="about__right">
-            <img src={'https://media-exp1.licdn.com/dms/image/C4E03AQGZKEIX7tNw7Q/profile-displayphoto-shrink_400_400/0/1637545247385?e=1664409600&v=beta&t=VRtbdj6ONhyJT7DfTDvIWkUhymEqziWEXLOjBvBSgsU'} alt="jerome" className="about__image" />
+            <img src={Profile} alt="artan" className="about__image" />
           </div>
         </div>
       </section>

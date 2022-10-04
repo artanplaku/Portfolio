@@ -4,6 +4,8 @@ import Intro from './Intro.js';
 import ReactGA from 'react-ga';
 import React, {useEffect} from 'react'
 
+const TRACKING_ID = 'G-FDVBXZQF17'
+
 
 function App() {
   // const ref = useRef(null)
@@ -12,7 +14,7 @@ function App() {
   // };
 
   useEffect(() => {
-    ReactGA.initialize('GA-ID');
+    ReactGA.initialize('TRACKING_ID');
     ReactGA.pageview(window.location.pathname + window.location.search)
     },[]);
 
