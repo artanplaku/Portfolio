@@ -108,7 +108,9 @@ const Intro = () => {
 
              <a
               href="https://open-vault-game.netlify.app/"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer"
+              >
             <div className="project__one">
             <p className="open_vault">Open the Vault</p>
             <div className="space__around"></div>
@@ -122,7 +124,9 @@ const Intro = () => {
 
              <a
               href="https://artanscrypto.netlify.app/"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer"
+              >
             <div className="project__two">
             <p className="open_vault">CryptoSearch</p>
             <div className="space__around"></div>
@@ -134,8 +138,10 @@ const Intro = () => {
             
 
              <a
-              href="https://reveal-store.surge.sh/"
-              target="_blank">
+              href="https://revealstore.netlify.app//"
+              target="_blank"
+              rel="noreferrer"
+              >
             <div className="project__three">
             <p className="open_vault">Reveal</p>
             <div className="space__around"></div>
