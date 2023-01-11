@@ -33,7 +33,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <div>
+    <div className="intro-container">
        <div>
        <ul>
             <li>
@@ -53,7 +53,9 @@ const Intro = () => {
         </ul>
     </div>
       <section className="hero__container" id="home">
+        <div className="header">
         <h1 className="hero__title--small">Hi, my name is</h1>
+        </div>
         <h2 className="hero__title--big">Artan Plaku</h2>
         <h2 className="hero__title--big">
           I'm a <span ref={typedRef}></span> Developer
@@ -114,13 +116,26 @@ const Intro = () => {
             <div className="project__one">
             <p className="open_vault">Open the Vault</p>
             <div className="space__around"></div>
+            </div>
+            </a>
             <p className="portfolio__text">
             Open the vault is a two player game, where one player picks a word and the other has 1 minute to guess it.
           </p>
-            </div>
-            </a>
             
            
+             <a
+              href="https://revealstore.netlify.app//"
+              target="_blank"
+              rel="noreferrer"
+              >
+            <div className="project__three">
+            <p className="open_vault">Reveal</p>
+            <div className="space__around"></div>
+            </div>
+            </a>
+            <p className="portfolio__text">
+            Online store lets users buy products 
+          </p>
 
              <a
               href="https://artanscrypto.netlify.app/"
@@ -130,31 +145,18 @@ const Intro = () => {
             <div className="project__two">
             <p className="open_vault">CryptoSearch</p>
             <div className="space__around"></div>
+            </div>
+            </a>
             <p className="portfolio__text">
             CryptoSearch lets you research crypto coins by marketcap, price and volume
           </p>
-            </div>
-            </a>
             
 
-             <a
-              href="https://revealstore.netlify.app//"
-              target="_blank"
-              rel="noreferrer"
-              >
-            <div className="project__three">
-            <p className="open_vault">Reveal</p>
-            <div className="space__around"></div>
-            <p className="portfolio__text">
-            Online store lets users buy products 
-          </p>
-            </div>
-            </a>
           </div>
         </div>
       </section>
-      <Contact />
-     
+
+      <Contact className='contact'/>
       
       </div>
   );
