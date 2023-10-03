@@ -286,6 +286,24 @@ li a:hover:not(.active) {
     flex-direction: column;
     align-items: center;
 }
+.project__four{
+    flex: 0 0 33.3333%;
+    /* clear: both; */
+    height: 40vh;
+    width: 60vwx;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("./bodyboost.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .project__div{
    
     flex-direction: row;

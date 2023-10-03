@@ -107,24 +107,22 @@ const Intro = () => {
         <div   className="project__div">
           <div className="project__div__inside">
 
-
-             <a
-              href="https://open-vault-game.netlify.app/"
+          <a
+              href="https://mybodyboost.netlify.app/"
               target="_blank"
               rel="noreferrer"
               >
-            <div className="project__one">
-            <p className="open_vault">Open the Vault</p>
+            <div className="project__four">
+            <p className="open_vault">Bodyboost</p>
             <div className="space__around"></div>
             </div>
             </a>
             <p className="portfolio__text">
-            Open the vault is a two player game, where one player picks a word and the other has 1 minute to guess it.
+            Personalized fitness companion 
           </p>
-            
            
              <a
-              href="https://revealstore.netlify.app//"
+              href="https://revealstore.netlify.app/"
               target="_blank"
               rel="noreferrer"
               >
@@ -149,6 +147,20 @@ const Intro = () => {
             </a>
             <p className="portfolio__text">
             CryptoSearch lets you research crypto coins by marketcap, price and volume
+          </p>
+
+             <a
+              href="https://open-vault-game.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              >
+            <div className="project__one">
+            <p className="open_vault">Open the Vault</p>
+            <div className="space__around"></div>
+            </div>
+            </a>
+            <p className="portfolio__text">
+            Open the vault is a two player game, where one player picks a word and the other has 1 minute to guess it.
           </p>
             
 
