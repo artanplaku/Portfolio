@@ -5,15 +5,17 @@ import Contact from "./Contact";
 import Profile from './profile.jpeg'
 
 const Intro = () => {
-  const ref = useRef(null)
-  const handleClick = () => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const portfolioRef = useRef(null);
+
+  const handleScroll = (e, ref) => {
+    e.preventDefault();
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // const ref1 = useRef(null)
-  // const handleAbout = () => {
-  //   ref1.current?.scrollIntoView({behavior: 'smooth'});
-  // };
+  
 
  
 
@@ -36,23 +38,30 @@ const Intro = () => {
     <div className="intro-container">
        <div>
        <ul>
-            <li>
-            <a  className="first" href="#contact">Contact</a>
-            </li>
-            <li>
-                <a onClick={handleClick} className="first" href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a className="first" href="#about">About</a>
-            </li>
-            <li>
-              <a  className="first" id="active" href="#home">
-                  Home
-                </a>
-            </li>
-        </ul>
+    <li>
+        <a onClick={(e) => handleScroll(e,contactRef)} className="first" href="#contact">
+            Contact
+        </a>
+    </li>
+    <li>
+        <a onClick={(e) => handleScroll(e, portfolioRef)} className="first" href="#portfolio">
+            Portfolio
+        </a>
+    </li>
+    <li>
+        <a onClick={(e) => handleScroll(e,aboutRef)} className="first" href="#about">
+            About
+        </a>
+    </li>
+    <li>
+        <a onClick={(e) => handleScroll(e,homeRef)} className="first" href="#home">
+            Home
+        </a>
+    </li>
+</ul>
+
     </div>
-      <section className="hero__container" id="home">
+      <section className="hero__container" id="home" ref={homeRef}>
         <div className="header">
         <h1 className="hero__title--small">Hi, my name is</h1>
         </div>
@@ -85,7 +94,7 @@ const Intro = () => {
           </a>
         </div>
       </section>
-      <section className="about__container" id="about">
+      <section className="about__container" id="about" ref={aboutRef}>
         <h1  className="about__title">About Me</h1>
         <div  className="about__content">
           <div className="about__left">
@@ -102,7 +111,7 @@ const Intro = () => {
           </div>
         </div>
       </section>
-      <section ref={ref}>
+      <section ref={portfolioRef}>
         <h1  className="portfolio">Portfolio</h1>
         <div   className="project__div">
           <div className="project__div__inside">
@@ -168,7 +177,7 @@ const Intro = () => {
         </div>
       </section>
 
-      <Contact className='contact'/>
+      <Contact className='contact' ref={contactRef}/>
       
       </div>
   );
